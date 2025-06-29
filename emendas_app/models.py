@@ -18,12 +18,11 @@ class Funcao(models.Model):
 
 class Localidade(models.Model):
     id_local = models.AutoField(primary_key=True)
-    nome = models.CharField(max_length=100)
     municipio = models.CharField(max_length=100)
     uf = models.CharField(max_length=2)
 
     def __str__(self):
-        return f"{self.nome} - {self.uf}"
+        return f"{self.municipio} - {self.uf}"
 
 
 class Instituicao(models.Model):
