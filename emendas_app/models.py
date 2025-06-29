@@ -10,7 +10,7 @@ class Proponente(models.Model):
 
 class Funcao(models.Model):
     cod_funcao = models.IntegerField(primary_key=True)
-    subfuncao = models.CharField(max_length=100)
+    nome = models.CharField(max_length=100)
 
     def __str__(self):
         return self.subfuncao
