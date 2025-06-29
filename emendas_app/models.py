@@ -17,7 +17,7 @@ class Funcao(models.Model):
 
 
 class Localidade(models.Model):
-    id_local = models.IntegerField(primary_key=True)
+    id_local = models.AutoField(primary_key=True)
     nome = models.CharField(max_length=100)
     municipio = models.CharField(max_length=100)
     uf = models.CharField(max_length=2)
