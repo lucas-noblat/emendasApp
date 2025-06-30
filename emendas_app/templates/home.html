@@ -1,18 +1,8 @@
-{% load static %}
+{% extends "base.html"%}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static  'emendasApp/css/style.css' %}">
-</head>
-<body>
-    <h1>Portal de transparencia</h1>
-    <div id = "retangulo-consulta">  
-        <input type="checkbox" name="" id="">      
-    </div>
-    
-</body>
-</html>
+{% block title %} Filtro por instituicao {% endblock %}
+{% block content %}
+    {% include "filtros.html"%}
+{% endblock %}
+
+{% load static %}

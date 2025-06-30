@@ -1,0 +1,52 @@
+<form action="">
+    <div id = "container-filtros">
+        <div>
+            <label for="filtro-uf">UF:</label>
+            <select name="filtro-uf" id="filtro-uf">
+                <option value="todasUF" selected>Todas</option>
+                <option value="RJ">RJ</option>
+                <option value="SP">SP</option>
+                <option value="MG">MG</option>
+                <option value="BA">BA</option>
+                <option value="GO">GO</option>
+                <option value="RN">RN</option>
+            </select>     
+            
+        </div>
+
+        <div>
+            <label for="filtro-uf">Areas:</label>
+                <select name="filtro-uf" id="filtro-uf">
+                    <option value="todasUF" selected>Todas</option>
+                    <option value="saude">Saude</option>
+                    <option value="defesa-nacional">Defesa nacional</option>
+                    <option value="agricultura">Agricultura</option>
+                    <option value="educacao">Educacao</option>
+                    <option value="previdencia-social">Previdencia social</option>
+                    <option value="administracao">Administracao</option>
+                    <option value="urbanismo">Urbanismo</option>
+                    <option value="direitos-da-cidadania">Direitos da cidadania</option>
+                    <option value="Ciência e Tecnologia">Ciencia e Tecnologia</option>
+                    <option value="organiz"></option>
+    
+                </select>                   
+        </div>
+
+        <div id = "valor-empenhado" class = "container-input-valores">
+            <label for="consulta-min-empenhado">Valor minimo empenhado</label>
+            <input type="number" id = "consulta-min-empenhado"></input>
+
+            <label for="consulta-max-empenhado">Valor maximo empenhado</label>
+            <input type="number" id = "consulta-max-empenhado"></input>
+        </div>
+                
+        <div id = "valor-pago" class = "container-input-valores">
+            <label for="consulta-min-empenhado">Valor minimo pago</label>
+            <input type="number" id = "consulta-min-pago" ></input>
+
+            <label for="consulta-max-pago">Valor maximo pago</label>
+            <input type="number" id = "consulta-max-pago"></input>
+        </div>
+        <button id = "form-btn">Consultar</button>
+    </div>
+</form>

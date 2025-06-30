@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Sistema de Emendas {% endblock %}</title>
+    <link rel="stylesheet" href="{% static  'emendasApp/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Analise de Emendas</h1>
+    </header>
+
+
+    <main>
+            <div id = "retangulo-consulta">
+            {% block content%} 
+            
+            {% endblock %}
+        </div>
+    </main>
+    
+<footer>
+    <p>&copy; 2025 - Grupo (Kaique, Lucas e Pedro)</p>
+</footer>
+</body>
+</html>
