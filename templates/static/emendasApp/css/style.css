@@ -62,6 +62,7 @@ table{
     width: 100%;
     border-collapse: collapse;
     overflow: auto;
+    max-width: 80%;
     max-height: 500px;
 }
 
@@ -87,5 +88,13 @@ tr:hover{
 
 #container-tabela{
     margin-top: 30px ;
+    max-width: 90%;
+    max-height: 500px;
+    overflow: auto;
   
+}
+
+#container-consultas{
+    margin-top: 30px;
+
 }
